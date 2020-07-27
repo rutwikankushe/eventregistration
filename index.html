@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hide and Show Div elements in javascript</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+  <div class="wrapper_left">
+    <ul>
+      <li data-li="oneplus" class="active">
+        <p>HOME</p>
+      </li>
+      <li data-li="registration">
+        <p>Registration</p>
+      </li>
+    </ul>
+  </div>
+  <div class="wrapper_right">
+    <div class="title">
+      <p><span style='font-family: "Comic Sans MS", sans-serif; color: rgb(255, 208, 239); font-size: 30px;'>BOOM MUSIC EVENT</span></p>
+      <br>
+    </div>
+    <div class="container">
+      <div class="item oneplus">
+        <div class="item_info">
+          <div class="img"></div>
+          <p>HOME</p>
+        </div>
+        <p>BOOM MUSIC<br>
+          <p><span style='font-family: "Trebuchet MS", Helvetica, sans-serif; color: rgb(255, 255, 255); font-size: 17px;'>Our aim is to provide our friends and everyone who joins us with quality Deep House and Nu Disco.</span></p>
+          <p><span style="font-size: 17px;"><span style="color: rgb(255, 255, 255);"><span style='font-family: "Trebuchet MS", Helvetica, sans-serif;'><span style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">party originating from our desire to demonstrate the quality and depth presently existent in a variety of electronic music genres and sub-categories. Focusing on the brilliance and excellence of tech and deep house but always finding time and space for introducing new and pioneering sounds.</span></span></span></span></p>
+          <p><span style='font-family: "Trebuchet MS", Helvetica, sans-serif; color: rgb(255, 255, 255);'><span style="font-size: 17px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">&nbsp;warm atmosphere party consisting of a friendly-attitude crowd. Everyone invited and allowed in is selected as we prefer crowd quality and always work together with each venue to ensure that people allowed in help towards creating a good atmosphere within the venue.</span></span><span style='font-family: "Trebuchet MS", Helvetica, sans-serif; color: rgb(0, 0, 0);'><span style="color: rgb(0, 0, 0); font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><br style="color: rgb(0, 0, 0); font-family: Helvetica, Arial, Verdana, &quot;Hiragino Kaku Gothic Pro&quot;, &quot;Hiragino Kaku Gothic Pro W3&quot;; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;"> </span></span></p>
+          <p><span style='font-family: "Trebuchet MS", Helvetica, sans-serif; color: rgb(0, 0, 0);'><br style="color: rgb(0, 0, 0); font-family: Helvetica, Arial, Verdana, &quot;Hiragino Kaku Gothic Pro&quot;, &quot;Hiragino Kaku Gothic Pro W3&quot;; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</span></p>
+          
+      </div>
+      <div class="item registration" style="display: none;">
+        <div class="item_info">
+          <div class="img"></div>
+          <p>Registartion</p>
+        </div>
+        <body>
+
+          <center>
+            <table border="4">
+              <thead>
+                <tr>
+                  <th>First Name</th>
+                  <td><input type="text" name="fname" id="fname"></td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Last Name</th>
+                  <td><input type="text" name="lname" id="lname"></td>
+                </tr>
+                <tr>
+                  <th>Email</th>
+                  <td><input type="text" name="email" id="email"></td>
+                </tr>
+                <tr>
+                  <th>Age</th>
+                  <td><input type="text" name="age" id="age"></td>
+                </tr>
+                <tr>
+                  <th>Choose Model</th>
+                  <td><label for="Models" name="model" id="model"></label>
+                    <select>
+                      <option value="Diamond">Diamond</option>
+                      <option value="Platinum">Platinum</option>
+                      <option value="Gold">Gold</option>
+                    </select><br>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Music Type</th>
+                  <td><input type="checkbox" id="type" name="type"><label for ="jazz">Jazz</label>
+                    <input type="checkbox" id="type" name="type"><label for ="hip hop">Hip hop</label>
+                    <input type="checkbox" id="type" name="type"><label for ="Rock">Jazz</label>
+                    <input type="checkbox" id="type" name="type"><label for ="DJ">Hip hop</label>
+                  </td>
+                </tr>
+                
+              
+                  
+                <tr>
+                  <th>Quantity</th>
+                  <td><input type="text" name="quantity" id="quantity" placeholder="Quantity">
+                  </td>
+                </tr>
+                <tr>
+                  <th>Mode of Payment</th>
+                  <td><input type="radio" id="mode" name="mode"><label for ="Online Payment">Online Payment</label>
+                    <input type="radio" id="COD" name="mode"><label for ="COD">COD</label>
+                  </td>
+                </tr>
+                <tr id="btna">
+                  <td colspan="2"><input type="button" name="button" id="btn" value="Add" onclick="AddRow()"></td>
+                </tr>
+              </tbody>
+            </table>
+        
+            <table border="4" id="show">
+              <thead>
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Email</th>
+                  <th>Age</th>
+                  <th>Choose Model</th>
+                  <th>Music Type</th>
+                  <th>Quantity</th>
+                  <th>Mode of Payment</th>
+                </tr>
+              </thead>
+            </table>
+          </center>
+          
+          <script>
+            
+            var list1 = [];
+            var list2 = [];
+            var list3 = [];
+            var list4 = [];
+            var list5 = [];
+            var list6 = [];
+            var list7 = [];
+            var list8 = [];
+        
+            var n = 1;
+            var x = 0;
+        
+            function AddRow(){
+        
+              var AddRown = document.getElementById('show');
+              var NewRow = AddRown.insertRow(n);
+        
+              list1[x] = document.getElementById("fname").value;
+              list2[x] = document.getElementById("lname").value;
+              list3[x] = document.getElementById("email").value;
+              list4[x] = document.getElementById("age").value;
+              list5[x] = document.getElementById("model").value;
+              list6[x] = document.getElementById("quantity").value;
+              list7[x] = document.getElementById("type").value;
+              list8[x] = document.getElementById("mode").value;
+        
+              var cel1 = NewRow.insertCell(0);
+              var cel2 = NewRow.insertCell(1);
+              var cel3 = NewRow.insertCell(2);
+              var cel4 = NewRow.insertCell(3);
+              var cel5 = NewRow.insertCell(4);
+              var cel6 = NewRow.insertCell(5);
+              var cel7 = NewRow.insertCell(6);
+              var cel8 = NewRow.insertCell(7);
+        
+              cel1.innerHTML = list1[x];
+              cel2.innerHTML = list2[x];
+              cel3.innerHTML = list3[x];
+              cel4.innerHTML = list4[x];
+              cel5.innerHTML = list5[x];
+              cel6.innerHTML = list6[x];
+              cel7.innerHTML = list7[x];
+              cel8.innerHTML = list8[x];
+        
+              n++;
+              x++;
+            }
+        
+          </script>
+        </body>
+      </div>
+    </div>
+  </div>
+</div>
+	<script src="scripts.js"></script>
+</body>
+</html>
